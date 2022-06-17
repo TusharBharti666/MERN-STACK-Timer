@@ -1,0 +1,61 @@
+:root {
+    --primary: crimson;
+    --dark: #1F2937;
+    --darkdark: #111827;
+    --light: #F3F4F6;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Fira sans', sans-serif;
+}
+
+body {
+    background: rgb(42, 41, 41);
+    color: black;
+}
+
+.timer {
+    text-align: center;
+    background-color: goldenrod;
+    width: 100%;
+    max-width: 360px;
+    margin: 4rem auto;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+.actual-time {
+    font-size: 5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.control-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.control-btns button {
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+
+    color: var(--light);
+    font-size: 1.125rem;
+    background-color: var(--primary);
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+
+    transition: 0.4s;
+}
+
+button:active {
+    background-color: var(--dark);
+}
